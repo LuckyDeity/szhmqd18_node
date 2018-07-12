@@ -1,0 +1,27 @@
+{
+  "name": "szhmqd18_node",
+  "version": "1.0.0",
+  "description": "nodeJS项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuckyDeity/szhmqd18_node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuckyDeity/szhmqd18_node/issues"
+  },
+  "homepage": "https://github.com/LuckyDeity/szhmqd18_node#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongodb": "^3.1.1",
+    "stemplate": "^0.1.0",
+    "xtpl": "^3.4.0"
+  }
+}

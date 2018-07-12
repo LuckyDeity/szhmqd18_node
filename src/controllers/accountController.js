@@ -1,3 +1,5 @@
+const path = require("path")
+
 exports.getLoginPage = (req,res)=>{
-    res.send("hello world");
+    res.sendFile(path.join(__dirname,"../views/login.html"));
 };

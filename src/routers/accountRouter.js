@@ -15,5 +15,7 @@ accountRouter.get('/register',accountController.getRegisterPage)
 
 accountRouter.post('/register',accountController.register)
 
+accountRouter.post('/registerVerify',accountController.registerVerify)
+
 //导出路由模块(中间件)
 module.exports = accountRouter;

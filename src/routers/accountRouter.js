@@ -9,5 +9,11 @@ const accountController = require(path.join(__dirname,'../controllers/accountCon
 
 accountRouter.get('/login',accountController.getLoginPage)
 
+accountRouter.get('/vcode',accountController.getImageVcode)
+
+accountRouter.get('/register',accountController.getRegisterPage)
+
+accountRouter.post('/register',accountController.register)
+
 //导出路由模块(中间件)
 module.exports = accountRouter;

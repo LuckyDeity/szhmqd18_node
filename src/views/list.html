@@ -1,5 +1,5 @@
 {{extend ("./parent.html")}}
-{{#block ("body")}}
+{{#block ("RightContent")}}
 <div class="panel panel-default">
     <div class="panel-heading">
         <ol class="breadcrumb">
@@ -16,7 +16,7 @@
         <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">学生姓名</span>
             <input type="text" class="form-control" id="studentNameId" placeholder="请输入学生姓名进行查询" aria-describedby="basic-addon1" style="width:200px;margin-right:10px;"
-                value="{{keyword}}">
+                value="">
             <input type="button" class="btn btn-success" onclick="search()" value="查找" style="margin-right:10px;">
             <input type="button" class="btn btn-success" value="新增" onclick="window.location='/studentmanager/add'">
         </div>
@@ -33,7 +33,7 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- {{#each(studentList)}}
+                {{#each(studentList)}}
                 <tr>
                     <td>{{this.name}}</td>
                     <td>{{this.age}}</td>
@@ -45,16 +45,16 @@
                         <input type="button" class="btn btn-danger" value="删除">
                     </td>
                 </tr>
-                {{/each}} -->
+                {{/each}}
             </tbody>
         </table>
     </div>
 </div>
-<!-- <script>
+<script>
     function search(){
         const keyword = $("#studentNameId").val()
 
         location.href = '/studentmanager/list?keyword='+keyword
     }
-</script> -->
+</script>
 {{/block}}
